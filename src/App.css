@@ -17,6 +17,22 @@
   box-sizing: border-box;
 }
 
+.swal2-popup {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.custom-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.swal2-timer-progress-bar {
+  background-color: orange !important;
+}
+
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -80,6 +96,8 @@ body {
   background-repeat: no-repeat;
 }
 
+
+
 nav {
   position: fixed;
   width: 100%;
@@ -108,6 +126,7 @@ nav {
   font-size: 1.5rem;
   color: var(--white);
   cursor: pointer;
+  display: block;
 }
 
 .nav__links {
@@ -152,6 +171,12 @@ nav {
 .header__image img {
   max-width: 600px;
   margin-inline: auto;
+}
+
+.header__username{
+  font-size: clamp(2px, 3.5vw, 5rem);
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .header__content h2 {
@@ -472,6 +497,10 @@ nav {
 
   .header__image {
     grid-area: 1/2/2/3;
+  }
+
+  .header__username{
+    text-align: left;
   }
 
   .header__content h2 {

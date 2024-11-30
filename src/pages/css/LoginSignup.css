@@ -1,0 +1,102 @@
+/* General Styles */
+.body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Auth Container */
+.auth__container {
+  max-width: 400px;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Form Header */
+.auth__form h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form Group */
+.form__group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form__group label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form__group input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Button Styles */
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ffc43f;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #ffb02e;
+}
+
+/* Toggle Link */
+.toggle__link {
+  color: #ffc43f;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+.toggle__link:hover {
+  color: #ffb02e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth__container {
+    padding: 1.5rem;
+  }
+
+  .auth__form h1 {
+    font-size: 1.75rem;
+  }
+
+  .form__group input {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
